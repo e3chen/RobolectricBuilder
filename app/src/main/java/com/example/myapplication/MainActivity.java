@@ -27,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
+
+        /*Button newActivityBtn = (Button) findViewById(R.id.button2);
+        newActivityBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Main2Activity.class));
+            }
+        });*/
     }
 
 
@@ -76,5 +84,7 @@ public class MainActivity extends AppCompatActivity {
         textView.setText("bye world!");
     }
 
-
+    public void newActivity(View view) {
+        startActivity(new Intent(MainActivity.this, Main2Activity.class));
+    }
 }
